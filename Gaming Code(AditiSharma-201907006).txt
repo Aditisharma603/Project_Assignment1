@@ -1,0 +1,105 @@
+//Name- Aditi Sharma
+//Student ID- 201907006
+//Date submitted- 20th march
+//Class & Section Number :IN2203 -g1
+//Name of work : Assignment 1 :the gambling game
+import java.util.Random; 
+
+import java.util.Scanner; 
+
+
+
+public class Main { 
+
+	public static void main(String[] args) 
+
+	{ 
+// store actual number and guess number 
+int answer, guesses; 
+//checks if user wants to play the game or not
+
+Scanner obj = new Scanner(System.in);
+System.out.println("Do you want to play the game?");
+String choice = obj.nextLine();
+
+ if(choice.compareTo("Yes")==0)
+                  {
+                System.out.println("Welcome.....Loading");
+}
+                else
+                 {
+                   System.out.println("Thanks");
+ System.out.println("Exiting the game");
+                   return;
+                 }
+                 
+
+		// maximum value is 100 
+
+		final int MAX = 100; 
+
+//Class&
+
+		Scanner in = new Scanner(System.in); 
+
+
+		// Random instance 
+
+		Random random = new Random(); 
+
+
+
+		boolean correct = false; 
+
+		// correct answer 
+
+		answer = random.nextInt(MAX) + 1; 
+
+
+
+		// loop until the guess is correct 
+
+		while (!correct) { 
+
+
+
+			System.out.println( 
+
+				"Guess a number between 1 and 100: "); 
+
+
+
+			// guess value 
+
+			guesses = in.nextInt(); 
+
+      	         if (guesses <= 10) { 
+
+				System.out.println("PLAYER WINS"); 
+
+			} 
+			// if guess is greater than actual 
+
+		
+
+			// guess is equal to actual value 
+
+			else { 
+
+
+
+				System.out.println("COMPUTER WINS"); 
+
+
+
+				correct = true; 
+
+			} 
+
+		} 
+
+
+		System.exit(0); 
+	} 
+
+}

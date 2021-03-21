@@ -1,0 +1,26 @@
+*******************************************Algorithm:Guess the Number and Win******************************
+
+Step 1:   Start
+Step 2:   Declare variables answer, guesses, choice.
+Step 3:   Input the value of choice from the user to check if he/she wants to play the game or not.
+Step 4:   If user enters choice == Yes,
+          Print: Welcome........Loading
+Step 5:   else 
+          Print: Thanks
+          Print: Exiting the game
+          Goto Step 10
+Step 4:   Initialize 100 <-- final int MAX
+Step 5:   Initialize random.nextInt(MAX) + 1 <-- answer
+Step 6:   User needs to enter a ramdom number
+Step 7:   while the guess is correct (starts a while loop here)
+          Print: Guess a number between 1 and 100:
+          Take input from the user.
+Step 8:   If guesses <=10,
+          Print: PLAYER WINS
+Step 9:   Else If the guess is equal to the actual value,
+          Print: COMPUTER WINS\
+          Goto Step 10
+Step 10:  Stop
+   
+    
+    
